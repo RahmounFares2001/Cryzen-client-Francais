@@ -22,7 +22,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center space-x-2">
             <span className="text-2xl font-heading font-bold text-primary">CryZen</span>
           </Link>
 
@@ -36,6 +36,7 @@ const Navigation = () => {
                   "font-medium transition-colors relative group",
                   isActive(link.path) ? "text-primary" : "text-foreground hover:text-primary"
                 )}
+                onClick={() => window.scrollTo(0, 0)}
               >
                 {link.label}
                 <span
@@ -71,11 +72,12 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                onClick={() => setIsOpen(false)}
+                onClick={() =>{ setIsOpen(false); window.scrollTo(0, 0)}}
                 className={cn(
                   "block py-2 font-medium transition-colors",
                   isActive(link.path) ? "text-primary" : "text-foreground hover:text-primary"
                 )}
+                
               >
                 {link.label}
               </Link>

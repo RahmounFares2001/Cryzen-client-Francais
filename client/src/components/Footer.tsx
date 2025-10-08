@@ -78,6 +78,7 @@ const Footer = () => {
                   <Link 
                     to={link.href} 
                     className="text-background/80 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block"
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     {link.label}
                   </Link>
