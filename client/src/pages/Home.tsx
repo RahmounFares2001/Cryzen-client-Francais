@@ -164,14 +164,17 @@ const Home = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Button variant="hero" size="lg" 
-                className="text-lg px-10 py-4 h-auto group" asChild>
+                className="text-lg px-10 py-4 h-auto group
+                    w-4/5 md:w-auto" asChild>
               <a href="#waitlist">
                 Commencer gratuitement
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </a>
             </Button>
             <Button variant="outline" size="lg" 
-                className="text-lg px-10 py-4 h-auto bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20" asChild>
+                className="text-lg px-10 py-4 h-auto bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20
+                  w-4/5 md:w-auto"
+                   asChild>
               <a href="#demo" className="flex items-center gap-2">
                 <Play size={20} />
                 Voir la démo
