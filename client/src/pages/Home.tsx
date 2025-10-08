@@ -145,7 +145,8 @@ const Home = () => {
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 
+              mb-6 mt-14 md:mt-0">
             <Zap size={16} className="text-primary animate-pulse" />
             <span className="text-sm text-white font-medium">Plateforme 100% française 🇫🇷</span>
           </div>
