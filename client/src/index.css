@@ -29,7 +29,7 @@ All colors MUST be HSL.
     --popover-foreground: 0 0% 20%;
     
     /* Primary = Mint for CTAs */
-    --primary: 169 76% 45%;
+    --primary: 169 76% 25%;
     --primary-foreground: 0 0% 100%;
     
     /* Secondary = Violet for accents */
@@ -110,6 +110,28 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
 }
 
 @layer utilities {
@@ -128,3 +150,5 @@ All colors MUST be HSL.
     background-clip: text;
   }
 }
+
+

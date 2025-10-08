@@ -43,13 +43,13 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-foreground text-background relative">
+    <footer className="bg-black text-background relative">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <h3 className="text-3xl font-heading font-bold text-gradient mb-4">CryZen</h3>
+            <h3 className="text-3xl font-heading font-bold text-primary mb-4">CryZen</h3>
             <p className="text-background/80 mb-6 leading-relaxed">
               La première plateforme e-learning francophone pour maîtriser la crypto-monnaie étape par étape.
             </p>
