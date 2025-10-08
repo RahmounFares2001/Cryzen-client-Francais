@@ -82,11 +82,11 @@ const Contact = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold mb-4">
-            Contacte-<span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">nous</span>
+          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
+            Contacte-<span className="text-primary">nous</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Une question, une suggestion ? On est là pour t'aider ! 💬
+          <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            Une question, une suggestion ? On est là pour t'aider !
           </p>
         </div>
 
@@ -99,16 +99,18 @@ const Contact = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardHeader>
-                <div className={`inline-flex p-4 rounded-full bg-gradient-to-br ${method.color} mb-4 group-hover:scale-110 transition-transform`}>
-                  <method.icon size={28} className="text-white" />
+                <div className={`inline-flex p-4 rounded-full bg-primary mb-4 
+                      group-hover:scale-110 transition-transform w-max`}>
+                  <method.icon size={20} className="text-white" />
                 </div>
-                <CardTitle className="font-heading text-xl">{method.title}</CardTitle>
-                <CardDescription>{method.description}</CardDescription>
+                <CardTitle className="font-heading text-sm md:text-base">{method.title}</CardTitle>
+                <CardDescription className="text-xs md:text-sm" >{method.description}</CardDescription>
               </CardHeader>
               <CardContent>
                 <a
                   href={method.link}
-                  className="text-primary hover:text-primary/80 transition-colors font-semibold text-lg"
+                  className="text-primary hover:text-primary/80 transition-colors font-semibold 
+                      text-sm md:text-lg"
                 >
                   {method.value}
                 </a>
@@ -122,8 +124,8 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="lg:col-span-2 shadow-2xl border-2">
             <CardHeader className="bg-gradient-card">
-              <CardTitle className="text-3xl font-heading">Envoie-nous un message</CardTitle>
-              <CardDescription className="text-base">
+              <CardTitle className="text-xl md:text-3xl font-heading">Envoie-nous un message</CardTitle>
+              <CardDescription className="text-sm md:text-base">
                 Remplis le formulaire ci-dessous et nous te répondrons rapidement
               </CardDescription>
             </CardHeader>
@@ -193,7 +195,8 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" variant="hero" size="lg" className="w-full text-lg h-14">
+                <Button type="submit" variant="hero" size="lg"
+                     className="w-full text-sm md:text-lg h-12 md:h-14">
                   <Send className="mr-2" size={20} />
                   Envoyer le message
                 </Button>
@@ -254,10 +257,10 @@ const Contact = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="bg-gradient-card rounded-3xl p-8 md:p-12">
+        <div className="bg-gradient-card rounded-3xl p-2 md:p-12">
           <div className="flex items-center justify-center gap-3 mb-8">
             <HelpCircle size={32} className="text-primary" />
-            <h2 className="text-3xl font-heading font-bold">Questions fréquentes</h2>
+            <h2 className="text-xl md:text-3xl font-heading font-bold">Questions fréquentes</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {faqs.map((faq, index) => (
@@ -266,10 +269,10 @@ const Contact = () => {
                 className="hover:shadow-xl transition-all duration-300 hover:scale-105 border-2"
               >
                 <CardHeader>
-                  <CardTitle className="text-lg font-heading">{faq.question}</CardTitle>
+                  <CardTitle className="text-sm md:text-lg font-heading">{faq.question}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{faq.answer}</p>
+                  <p className="text-sm md:text-base text-muted-foreground">{faq.answer}</p>
                 </CardContent>
               </Card>
             ))}
