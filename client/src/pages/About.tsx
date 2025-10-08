@@ -90,7 +90,7 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
             <Card className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-primary">
               <CardHeader>
-                <div className="inline-flex p-4 rounded-full bg-gradient-to-br from-primary to-secondary mx-auto mb-4">
+                <div className="inline-flex p-4 rounded-full bg-primary mx-auto mb-4">
                   <Target size={40} className="text-white" />
                 </div>
                 <CardTitle className="font-heading text-2xl">Mission</CardTitle>
@@ -104,7 +104,7 @@ const About = () => {
 
             <Card className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-secondary">
               <CardHeader>
-                <div className="inline-flex p-4 rounded-full bg-gradient-to-br from-secondary to-primary mx-auto mb-4">
+                <div className="inline-flex p-4 rounded-full bg-primary mx-auto mb-4">
                   <Lightbulb size={40} className="text-white" />
                 </div>
                 <CardTitle className="font-heading text-2xl">Vision</CardTitle>
@@ -118,7 +118,7 @@ const About = () => {
 
             <Card className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-primary">
               <CardHeader>
-                <div className="inline-flex p-4 rounded-full bg-gradient-to-br from-primary to-secondary mx-auto mb-4">
+                <div className="inline-flex p-4 rounded-full bg-primary mx-auto mb-4">
                   <Users size={40} className="text-white" />
                 </div>
                 <CardTitle className="font-heading text-2xl">Valeurs</CardTitle>
