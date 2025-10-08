@@ -27,19 +27,19 @@ const App = () => (
           {/* Public Routes with Layout */}
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="a-propos" element={<About />} />
+            {/* <Route path="a-propos" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="modules" element={<Modules />} />
+            <Route path="modules" element={<Modules />} /> */}
           </Route>
 
           {/* Admin Routes (no layout) */}
-          <Route path="admin">
+          {/* <Route path="admin">
             <Route path="login" element={<AdminLogin />} />
             <Route path="dashboard" element={<AdminDashboard />} />
             <Route path="clients" element={<AdminClients />} />
             <Route path="modules" element={<AdminModules />} />
             <Route path="chapitres/:moduleId" element={<AdminChapitres />} />
-          </Route>
+          </Route> */}
 
           {/* Catch-all */}
           <Route path="*" element={<NotFound />} />
