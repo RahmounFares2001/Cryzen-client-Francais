@@ -27,9 +27,9 @@ const App = () => (
           {/* Public Routes with Layout */}
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            {/* <Route path="a-propos" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="modules" element={<Modules />} /> */}
+            <Route path="a-propos" element={<About />} />
+            {/* <Route path="contact" element={<Contact />} /> */}
+            {/* <Route path="modules" element={<Modules />} /> */}
           </Route>
 
           {/* Admin Routes (no layout) */}

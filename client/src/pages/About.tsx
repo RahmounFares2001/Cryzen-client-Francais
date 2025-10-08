@@ -4,19 +4,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const About = () => {
   const team = [
     { 
-      name: "Sophie Martin", 
+      name: "RAHMOUN Fares", 
       role: "CEO & Co-fondatrice", 
       description: "Experte blockchain & éducation",
       color: "from-primary to-secondary"
     },
     { 
-      name: "Thomas Dubois", 
+      name: "RAHMOUN Fares", 
       role: "CTO & Co-fondateur", 
       description: "Développeur & passionné de crypto",
       color: "from-secondary to-primary"
     },
     { 
-      name: "Marie Laurent", 
+      name: "RAHMOUN Fares", 
       role: "Responsable Pédagogique", 
       description: "Spécialiste e-learning",
       color: "from-primary to-secondary"
@@ -58,10 +58,10 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Hero */}
         <div className="text-center mb-16 animate-fade-in max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-            À propos de <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">CryZen</span>
+          <h1 className="text-3xl md:text-6xl font-heading font-bold mb-6">
+            À propos de <span className="text-primary">CryZen</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+          <p className="text-sm md:text-2xl text-muted-foreground leading-relaxed">
             Notre mission est de rendre la cryptomonnaie accessible à tous les francophones, en proposant un
             apprentissage progressif, ludique et sans jargon technique compliqué.
           </p>
@@ -77,8 +77,8 @@ const About = () => {
             >
               <CardContent className="pt-6">
                 <achievement.icon size={32} className="text-primary mx-auto mb-3" />
-                <div className="text-4xl font-bold text-primary mb-2">{achievement.number}</div>
-                <div className="text-sm text-muted-foreground">{achievement.label}</div>
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{achievement.number}</div>
+                <div className="text-xs md:text-sm text-muted-foreground">{achievement.label}</div>
               </CardContent>
             </Card>
           ))}
@@ -134,7 +134,7 @@ const About = () => {
 
         {/* Values Grid */}
         <div className="mb-20 bg-gradient-card rounded-3xl p-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-12 text-center">Nos valeurs fondamentales</h2>
+          <h2 className="text-2xl md:text-4xl font-heading font-bold mb-12 text-center">Nos valeurs fondamentales</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div 
@@ -154,9 +154,9 @@ const About = () => {
 
         {/* Story */}
         <div className="mb-20 max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-12 border-2 border-primary/20">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-center">Notre histoire</h2>
-            <div className="space-y-6 text-lg leading-relaxed">
+          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-5 md:p-12 border-2 border-primary/20">
+            <h2 className="text-2xl md:text-4xl font-heading font-bold mb-6 text-center">Notre histoire</h2>
+            <div className="text-sm space-y-6 md:text-lg leading-relaxed">
               <p className="text-muted-foreground">
                 CryZen est né d'un constat simple : il existe très peu de ressources pédagogiques de qualité en français
                 pour apprendre la cryptomonnaie. Trop souvent, les contenus sont trop techniques, en anglais, ou peu
@@ -177,21 +177,22 @@ const About = () => {
 
         {/* Team */}
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-center">L'équipe CryZen</h2>
-          <p className="text-xl text-muted-foreground mb-12 text-center max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-4xl font-heading font-bold mb-4 text-center">L'équipe CryZen</h2>
+          <p className="text-base md:text-xl text-muted-foreground mb-12 text-center max-w-2xl mx-auto">
             Des passionnés de crypto et d'éducation réunis pour démocratiser l'apprentissage blockchain
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <Card 
                 key={member.name} 
-                className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105 group overflow-hidden border-2"
+                className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105 group overflow-hidden 
+                    border-2 py-3"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardHeader className="pb-4">
-                  <div className={`w-32 h-32 rounded-full bg-gradient-to-br ${member.color} mx-auto mb-6 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform`}>
+                  {/* <div className={`w-32 h-32 rounded-full bg-gradient-to-br ${member.color} mx-auto mb-6 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform`}>
                     <span className="text-5xl font-heading font-bold text-white">{member.name.charAt(0)}</span>
-                  </div>
+                  </div> */}
                   <CardTitle className="font-heading text-2xl mb-2">{member.name}</CardTitle>
                   <p className="text-sm font-semibold text-primary">{member.role}</p>
                 </CardHeader>
@@ -204,14 +205,17 @@ const About = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-20 text-center p-12 bg-gradient-to-r from-primary to-secondary rounded-3xl max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-white">Prêt à nous rejoindre ?</h2>
-          <p className="text-xl text-white/90 mb-8">
+        <div className="mt-20 text-center p-12 bg-primary rounded-3xl max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-4xl font-heading font-bold mb-4 text-white">Prêt à nous rejoindre ?</h2>
+          <p className="text-base md:text-xl text-white/90 mb-8">
             Rejoins la communauté CryZen et commence ton voyage dans l'univers crypto
           </p>
           <a
             href="/#waitlist"
-            className="inline-flex items-center justify-center px-10 py-4 bg-white text-primary rounded-xl hover:bg-white/90 font-semibold transition-all duration-300 hover:shadow-2xl hover:scale-105 text-lg"
+            className="inline-flex items-center justify-center 
+                w-full py-3 md:py-4 bg-white 
+                  text-primary rounded-xl hover:bg-white/90 font-semibold transition-all duration-300 hover:shadow-2xl hover:scale-105 
+                  text-sm md:text-lg"
           >
             Rejoindre la liste d'attente 🚀
           </a>
