@@ -46,10 +46,10 @@ const Modules = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12 max-w-3xl mx-auto animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-            Nos <span className="text-gradient">Modules</span>
+          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
+            Nos <span className="text-primary">Modules</span>
           </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-base md:text-xl text-muted-foreground leading-relaxed">
             Une formation complète et progressive pour maîtriser tous les aspects de la crypto-monnaie, du niveau
             débutant à avancé.
           </p>

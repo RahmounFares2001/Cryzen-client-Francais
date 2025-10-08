@@ -29,7 +29,7 @@ const App = () => (
             <Route index element={<Home />} />
             <Route path="a-propos" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            {/* <Route path="modules" element={<Modules />} /> */}
+            <Route path="modules" element={<Modules />} />
           </Route>
 
           {/* Admin Routes (no layout) */}
