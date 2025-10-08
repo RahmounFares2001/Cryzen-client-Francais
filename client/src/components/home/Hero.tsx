@@ -28,7 +28,7 @@ export default function Hero() {
   }, [images.length]);
 
   return (
-    <section className="relative min-h-[700px] md:min-h-[800px] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[700px h-dvh md:min-h-[800px] flex items-center justify-center overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-black opacity-90">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(46,211,183,0.1),transparent_50%)]" />
@@ -66,25 +66,25 @@ export default function Hero() {
 
       <div className="relative z-10 container mx-auto px-4 text-center animate-fade-in">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 
-            mb-6 mt-14 md:mt-0">
+            mb-6 md:mt-0">
           <Zap size={16} className="text-primary animate-pulse" />
           <span className="text-sm text-white font-medium">Plateforme 100% française 🇫🇷</span>
         </div>
         
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight">
+        <h1 className="text-3xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight">
           Maîtrise la crypto
           <br />
           <span className="text-white">
             facilement
           </span>
         </h1>
-        <p className="text-base md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-sm md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
           La première plateforme e-learning francophone pour comprendre Bitcoin, Ethereum, la blockchain et le Web3 étape par étape.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <Button variant="hero" size="lg" 
-              className="text-lg px-10 py-4 h-auto group
+              className="text-sm md:text-lg px-10 py-3 md:py-4 h-auto group
                   w-4/5 md:w-auto" asChild>
             <a href="#waitlist">
               Commencer gratuitement
@@ -92,7 +92,7 @@ export default function Hero() {
             </a>
           </Button>
           <Button variant="outline" size="lg" 
-              className="text-lg px-10 py-4 h-auto bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20
+              className="text-dm md:text-lg px-10 py-3 md:py-4 h-auto bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20
                 w-4/5 md:w-auto"
                  asChild>
             <a href="#demo" className="flex items-center gap-2">
